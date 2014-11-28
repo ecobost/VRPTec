@@ -1,0 +1,64 @@
+Date: 06-Jun-2013
+This format was created by Erick M. Cobos T. at Tec de Monterrey, Mexico (a01184587@itesm.mx, @ecobos21)
+Under the direction of Phd Santiago Conant (sconant@itesm.mx) and Phd Hugo Terashima (terashima@itesm.mx)
+Use: This is the intended way a VRPTW problem instance should be given to our program. 
+Should this format be extended to receive new parameters, please conserve the current tree structure.
+
+<?xml version="1.0"?>
+<instance>
+	<type></type>
+	<name> </name>
+	<vehicles>
+		{
+		<set>
+			<vehicle_count></vehicle_count>
+			<capacity> </capacity>
+		</set>
+		} <!-- this means one or more types of vehicles-->
+	</vehicles>
+	{
+	<client>
+		<number></number>
+		<x></x> <!--Optional-->
+		<y></y> <!--Optional-->
+		<demand></demand>
+		<service_time></service_time>
+		<time_window>
+			<start></start>
+			<end></end>
+			<flexible></flexible> 
+		</time_window>
+		<distances>
+			{
+			<client_#> </client_#> <!-- # is a valid client number -->
+			} <!-- this means one or more clients-->
+		</distances>
+		<times>
+			[
+			<client_#> </client_#> <!-- # is a valid client number -->
+			]<!-- this means zero or more clients-->
+		</times>
+	</client>
+	} <!-- this means one or more clients-->
+</instance>
+
+Description of elements
+instance: It's an specific instance of the problem.
+type: It's the type of the problem instance e.g. VRPTW.
+name: It's the name of the instance.
+vehicles: A description of the different types of vehicles that will be used to solve the problem.
+set: A set of vehicles with common features. By now, only one set of vehicles (all with the same capacity) is accepted.
+vehicle_count: Number of vehicles in this set.
+capacity: The capacity of the vehicles in this set.
+client: A single client/customer.
+number: The number of the client. The depot is the client 0
+x: x coordinate
+y: y coordinate
+demand: The demand of the client. How much product it wants.
+service_time: The service time of a client. How much it takes to complete the delivery once it has beginning.
+time_window: The time window in which a client will accept a delivery
+start: Start of the time window. Inclusive
+end: End of the time window. Inclusive
+flexible: This is a [Y|N] element stating if this particular time windows is flexible, it is the vehicle can arrive after the end of the tw and still make the delivery.
+distances: Distances to other clients. If a client is not stated the distance is assumed to be infinite.
+times: Times to other clients. If a client is not stated the time is assumed to be infinite.

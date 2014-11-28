@@ -1,0 +1,58 @@
+Date: 10-Jun-2013
+This format was created by Erick M. Cobos T. at Tec de Monterrey, Mexico (a01184587@itesm.mx, @ecobos21)
+Under the direction of Phd Santiago Conant (sconant@itesm.mx) and Phd Hugo Terashima (terashima@itesm.mx)
+Use: This is the intended way a configuration file should be given to our program. 
+Should this format be extended to receive new parameters, please conserve the current tree structure.
+
+<?xml version="1.0"?>
+<configuration>
+	<algorithm>
+		<!-- Description: -->
+		<name></name>
+		[
+		<parameter>
+			<name></name>
+			<value></value>
+		</parameter>
+		] <!-- This means zero or more parameters -->
+	</algorithm>
+	<heuristic>
+		<!-- Description: -->
+		<name></name>
+		[
+		<parameter>
+			<name></name>
+			<value></value>
+		</parameter>
+		] <!-- This means zero or more parameters -->
+	</heuristic>
+	<objective_function>
+		<!-- Description: -->
+		<name></name>
+		[
+		<parameter>
+			<name></name>
+			<value></value>
+		</parameter>
+		] <!-- This means zero or more parameters -->
+	</objective_function>
+	<miscelaneous>
+		[
+		<parameter>
+			<name></name>
+			<value></value>
+		</parameter>
+		] <!-- This means zero or more parameters -->
+	</miscelaneous>
+</configuration>
+
+Description of the elements:
+configuration: It's the root element of the XML
+algorithm: Receives any configuration regarding the algorithm.
+name: Name of the algorithm e.g. hill-climbing estocatsico, simulated annealing, etc.
+parameter: contains the information of one parameter.
+name: Name or id of the parameter
+value: Value of the parameter
+heuristic: The features of the heuristic that will be used.
+objective_function: The attributes of the objective_function that will be used to compute the aptitude of the solution.
+miscelaneous: Section with different parameters that are not related with the other three.

@@ -1,0 +1,98 @@
+Date: 06-Jun-2013
+This format was created by Erick M. Cobos T. at Tec de Monterrey, Mexico (a01184587@itesm.mx, @ecobos21)
+Under the direction of Phd Santiago Conant (sconant@itesm.mx) and Phd Hugo Terashima (terashima@itesm.mx)
+Use: This is the intended way a solution to a VRPTW instance problem should be delivered by our program. 
+Should this format be extended to present new or more specific parameters, please conserve the current tree structure.
+
+<?xml version="1.0"?>
+<solution>
+	<instance>
+		<name></name>
+		<algorithm>
+			<name></name>
+			[
+			<parameter>
+				<name></name>
+				<value></value>
+			</parameter>
+			] <!-- This means zero or more parameters -->
+		</algorithm>
+		<heuristic>
+			<name></name>
+			[
+			<parameter>
+				<name></name>
+				<value></value>
+			</parameter>
+			] <!-- This means zero or more parameters -->
+		</heuristic>
+		<objective_function>
+			<name></name>
+			[
+			<parameter>
+				<name></name>
+				<value></value>
+			</parameter>
+			] <!-- This means zero or more parameters -->
+		<objective_function>
+		<total_distance></total_distance>
+		<total_time></total_time>
+		<total_aptitude></total_aptitude>
+		<date>
+			<day></day>
+			<month></month>
+			<year></year>
+		</date>
+		<execution_time></execution_time> <!--Optional-->
+		<pc_specification> <--Optional-->
+			<os_name></os_name>
+			<os_architeture></os_architecture>
+			<processor_count></processor_count>
+			<--Here one could add other important specifications-->
+		</pc_specification> <--Optional-->
+		<routes>
+			{
+			<route>
+				<vehicle_capacity></vehicle_capacity>
+				<total_demand></total_demand>
+				<client_count></client_count>
+				<client_1></client_1> 
+				...
+				<client_n></client_n> <!-- n is the total number of clients in this route -->
+			</route>
+			}<!-- this means one or more routes-->	
+		</routes>
+	</instance>
+	<!-- Here other solution instances (<instance>) could go but only one instance per file is accepted by now-->
+</solution>
+
+Description of the elements
+solution: It's the root element of the XMl file
+instance: It's the solution description of a given problem instance.
+name: The name of the problem instance solved. The same as in the input XML.
+heuristic: Description of the heuristic method used to solve this instance. One could add elements to this element to account for the specific tuning of the heuristic e.g. seed client.
+objective_function: Description of the objective function used to compute the costs or aptitudes to solve this instance problem.
+name: Identifier of this objective function
+parameter_count: Number of parameters received from input needed to compute the objective function.
+parameter_#: Parameter number # given to the objective function.
+total_distance: Sum of distances of the different routes in this instance of the solution.
+total_time: Sum of the time spent for the different routes in this instance of the solution.
+total_aptitude: Result of running the objective function over this instance of the solution.
+date: The date this file was generated.
+execution_time: The time of execution taken by the algorithm to solve this problem.
+pc_specification: important data refeent to the computer where the program is running.
+os_name: The name of the operating system as received by Java
+os_architecture: The architecture of the operating system as received by Java
+processor_count: The number of porccesors available to the JVM
+routes: This will contain all the routes of one solution.
+route: Description of a single route of the solution. One could add elements to this element to give specific results e.g. time, distance, etc.
+vehicle_capacity: The capacity of the vehicle assigned to this route.
+total_demand: The sum of the demand of the clients assgined to this route
+client_count: Number of clients in this route.
+client_#: #th client in the route.
+
+Opcion cliente:
+<client>
+	<position>
+	<number>
+</client>

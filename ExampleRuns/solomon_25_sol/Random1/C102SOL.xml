@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<solution>
+	<instance>
+		<name>C102</name>
+		<algorithm>
+			<name>ConstructiveAlgorithm</name>
+		</algorithm>
+		<heuristic>
+			<name>Random1</name>
+		</heuristic>
+		<objective_function>
+			<name>None</name>
+		</objective_function>
+		<total_distance>67906.0</total_distance>
+		<total_time>-2147348698</total_time>
+		<total_aptitude>-1.0</total_aptitude>
+		<date>
+			<day>3</day>
+			<month>7</month>
+			<year>2013</year>
+		</date>
+		<execution_time>0</execution_time>
+		<pc_specification>
+			<os_name>Windows 8</os_name>
+			<os_architeture>64</os_architeture>
+			<processor_count>4</processor_count>
+		</pc_specification>
+		<routes>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>20</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>5</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>19</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>1</client_1>
+				
+			</route>
+			<route>
+				<total_demand>40.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>15</client_1>
+				
+			</route>
+			<route>
+				<total_demand>30.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>13</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>14</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>24</client_1>
+				
+			</route>
+			<route>
+				<total_demand>20.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>18</client_1>
+				
+			</route>
+			<route>
+				<total_demand>20.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>7</client_1>
+				
+			</route>
+			<route>
+				<total_demand>20.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>12</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>3</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>4</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>10</client_1>
+				
+			</route>
+			<route>
+				<total_demand>20.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>22</client_1>
+				
+			</route>
+			<route>
+				<total_demand>20.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>8</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>23</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>9</client_1>
+				
+			</route>
+			<route>
+				<total_demand>10.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>11</client_1>
+				
+			</route>
+			<route>
+				<total_demand>30.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>2</client_1>
+				
+			</route>
+			<route>
+				<total_demand>40.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>16</client_1>
+				
+			</route>
+			<route>
+				<total_demand>40.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>25</client_1>
+				
+			</route>
+			<route>
+				<total_demand>20.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>17</client_1>
+				
+			</route>
+			<route>
+				<total_demand>20.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>6</client_1>
+				
+			</route>
+			<route>
+				<total_demand>20.0</total_demand>
+				<vehicle_capacity>200</vehicle_capacity>
+				<client_count>1</client_count>
+				<client_1>21</client_1>
+				
+			</route>
+		</routes>
+	</instance>
+</solution>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!--
+Date: 20-Jun-2013
+This file was created by Erick M. Cobos T. at Tec de Monterrey, Mexico (a01184587@itesm.mx, @ecobos21)
+Use: This is the configuration file to run a Constructive Algorithm with the Random1 heuristic.
+-->
+<configuration>
+	<algorithm>
+		<!-- Description: The constructive algorithm will form a solution by getting a new route calling the heuristic assigned and adding it to the current solution  -->
+		<name>ConstructiveAlgorithm</name>
+	</algorithm>
+	<heuristic>
+		<!-- Description: The Random1 heuristic will choose a client at random and add it at the end of the current route. If the addition of the client is not feasible the heuristic will 			create a new route.-->
+		<name>Random1</name>
+	</heuristic>
+	<objective_function>
+		<!-- Description: None-->
+		<name>None</name>
+	</objective_function>
+	<miscelaneous>
+		<parameter>
+			<name>writer</name>
+			<value>default</value>
+		</parameter>
+	</miscelaneous>
+</configuration>
